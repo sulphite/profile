@@ -155,8 +155,8 @@ h2 {
 }
 
 #fourth {
-  background: var(--secondary) url("https://cdn.discordapp.com/attachments/859729768077066300/1073382576540094525/Untitled_Artwork.png");
-  background-size: contain;
+  background: var(--secondary) url("https://cdn.discordapp.com/attachments/859729768077066300/1073382576540094525/Untitled_Artwork.png") no-repeat;
+  background-size: cover;
 }
 
 
@@ -195,7 +195,7 @@ h2 {
 
   .container {
     height: 100vh;
-    max-width: 85vw;
+    max-width: 90vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -211,15 +211,14 @@ h2 {
   .main-inner {
     max-height: 70vh;
     padding: 1em;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
     overflow: auto;
   }
+
 
   #second::before {
     background: var(--light) url("https://cdn.discordapp.com/attachments/859729768077066300/1073405268630704208/Untitled_Artwork.png") no-repeat;
     background-size: contain;
+    background-position: center;
     opacity: 1;
     content: "";
     height: 300px;
@@ -234,6 +233,7 @@ h2 {
   #third::before {
     background: var(--light) url("https://cdn.discordapp.com/attachments/859729768077066300/1072979789830430892/Untitled_Artwork.png") no-repeat;
     background-size: cover;
+    background-position: center;
     opacity: 1;
     content: "";
     height: 300px;
